@@ -1,0 +1,12 @@
+# Ignore actual sensitive data and huge caches
+**/google-chrome/
+**/Discord/
+**/Bitwarden/
+**/Code/
+**/pulse/
+**/systemd/
+
+# Ignore common junk
+.DS_Store
+*.log
+*.tmp
