@@ -1,1 +1,47 @@
-../../dotfiles/waybar/.config/waybar/style.css
+@import "mocha.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: @crust;
+    color: @text;
+    border-bottom: 2px solid @mauve;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: @overlay0;
+}
+
+#workspaces button.focused {
+    color: @rosewater;
+    background-color: @surface0;
+}
+
+#workspaces button.active {
+    color: @mauve;
+    background-color: @surface1;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+#cpu, #memory, #network, #pulseaudio, #bluetooth, #tray, #custom-clock {
+    padding: 0 10px;
+    margin: 4px 2px;
+    background-color: @surface0;
+    border-radius: 8px;
+}
+
+#cpu { color: @pink; }
+#memory { color: @maroon; }
+#network { color: @yellow; }
+#pulseaudio { color: @blue; }
+#bluetooth { color: @sky; }
+#custom-clock { color: @peach; }
+#tray { background-color: transparent; }
